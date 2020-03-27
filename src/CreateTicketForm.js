@@ -32,9 +32,17 @@ class CreateTicketForm extends Component {
         })
         .then(function(response) {
             alert(response.data);
+            
         })
         .catch(function(xhr, ajaxOptions, thrownError) {
             console.log(xhr.status);
+        });
+
+        this.setState({
+            name : '',
+            roll : '',
+            complain : ''
+
         });
     }
     render(){
