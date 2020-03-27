@@ -6,7 +6,7 @@ class Header extends Component {
         return (
             <div >
                 <div className="header">
-                    <h3 className="name">Hi, Dipika Choudhary !!</h3> 
+                    <h3 className="name">Hi, Megha!!</h3> 
                     <img className="head_img" src={sign_out}/>
                     <h3 className="name">Sign Out</h3>
                 </div>
