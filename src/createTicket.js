@@ -9,7 +9,7 @@ class createTicket extends Component {
             <div>
                 <Header/>
                 <div>
-                    <h1 className="heading">Complaint Management System !</h1>
+                    <h1 className="heading">Register Your Complaint Here </h1>
                 </div>
                 <CreateTicketForm/>
                 <Footer/>

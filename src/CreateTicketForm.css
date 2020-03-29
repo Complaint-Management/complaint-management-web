@@ -1,12 +1,14 @@
 .form-style-3{
-    width: 100%; 
-    height: 100%; 
-    left: 0;
+    width: 60%; 
+    min-height: 550px;
+	left: 0;
+	margin-left:300px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .form-style-3 label{
 	display:block;
 	margin-bottom: 10px;
+	margin-left:150px
 }
 .form-style-3 label > span{
 	float: left;
@@ -16,6 +18,7 @@
 	text-shadow: 1px 1px 1px #EBF5FB;
 }
 .form-style-3 fieldset{
+	height: 500px;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -27,6 +30,8 @@
 	-webkit-box-shadow: inset 0px 0px 15px #3498DB;
 }
 .form-style-3 fieldset legend{
+	margin-left: 20px;
+	width: 780px;
 	border-top: 1px solid #3498DB;
     border-left: 1px solid #3498DB;
     border-right: 1px solid #3498DB;
@@ -53,7 +58,7 @@
 .form-style-3 input[type=time],
 .form-style-3 input[type=url],
 .form-style-3 input[type=email],
-.form-style-3 select, 
+.form-style-3 select ,
 .form-style-3 textarea{
 	border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -64,21 +69,26 @@
         box-shadow: inset 1px 1px 4px #3498DB;
         -moz-box-shadow: inset 1px 1px 4px #3498DB;
         -webkit-box-shadow: inset 1px 1px 4px #3498DB;
-        width:50%;
+		width:50%;
 }
 .form-style-3  input[type=submit],
 .form-style-3  input[type=button]{
-		background: #3498DB;
-    	border: 1px solid #3498DB;
+		margin-left: 190px;
+		background:#166fc2;
+    	border: 1px solid #166fc2;
         padding: 5px 15px 5px 15px;
-        box-shadow: inset -1px -1px 3px #3498DB;
-        -moz-box-shadow: inset -1px -1px 3px #3498DB;
-        -webkit-box-shadow: inset -1px -1px 3px #3498DB;
+        box-shadow: inset -1px -1px 3px#166fc2;
+        -moz-box-shadow: inset -1px -1px 3px#166fc2;
+        -webkit-box-shadow: inset -1px -1px 3px#166fc2;
         border-radius: 3px;
         border-radius: 3px;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
-        font-weight: bold;
+		font-weight: bold;
+		height: 40px;
+		width: 150px;
+		color: white
+		
 }
 .required{
 	color:red;

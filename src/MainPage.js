@@ -13,8 +13,8 @@ class MainPage extends Component {
             <div >
                 <Header/>
                 <div>
-                    <h1 className="heading">Complaint Management System !</h1>
-                    <div><h3 className="heading1"> </h3></div>
+                    <h1 className="heading">Hi, Dipika Choudhary</h1>
+                    <div><p className="heading1">Having Problems at hostel or in studies or any thing else, make your voice heard. Register your complaint here in the create ticket section and get them solved.</p></div>
                     <div className="container">
                     <Link to="/create-new-ticket"><div hoverable className="card1" >
                         <img className="img" src={images}/><br/><br/>Create new ticket

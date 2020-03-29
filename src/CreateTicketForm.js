@@ -5,13 +5,10 @@ import axios from 'axios';
 class CreateTicketForm extends Component {
     constructor(props) {
         super(props)
-    
         this.state = {
              name : '',
              roll : '',
              complain : ''
-
-
         }
     }
 
@@ -50,10 +47,11 @@ class CreateTicketForm extends Component {
         return (
             <div class="form-style-3">
                 <form onSubmit = {this.submitHandler}>
-                <fieldset><legend>Register Complain</legend>
-                <label for="name"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value = {name} onChange = {this.changeHandler} /></label><br/><br/>
-                <label for="roll"><span>Roll <span class="required">*</span></span><input type="text" class="input-field" name="roll" value = {roll} onChange = {this.changeHandler} /></label><br/><br/>
-                <label for="complain"><span>Complain <span class="required">*</span></span><input type="text" class="input-field" name="complain" value = {complain} onChange = {this.changeHandler} /></label><br/><br/>
+                <fieldset><legend>Register Complaint</legend>
+                <br/><br/>
+                <label for="name"><span>Full Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value = {name} placeholder="Enter Your Name"onChange = {this.changeHandler} /></label><br/><br/>
+                <label for="roll"><span>Roll Number<span class="required">*</span></span><input type="text" class="input-field" name="roll" value = {roll} placeholder="Enter Your Roll Number"onChange = {this.changeHandler} /></label><br/><br/>
+                <label for="complain"><span>Complaint <span class="required">*</span></span><textarea type="text" class="input-field" name="complain" value = {complain} placeholder="Describe Youre Issue Here" onChange = {this.changeHandler} /></label><br/><br/>
                 <label><span> </span><input type="submit" value="Submit" /></label>
                 </fieldset> 
                 </form>
