@@ -16,8 +16,13 @@ class viewHistory extends Component {
     }
     
     componentDidMount(){
-      axios.get(`http://localhost:8080/complaint/all/complaint/history/1605272`)
-    .then(res => {
+      const config={
+        headers:{
+          "Authorization":localStorage.getItem("access_token")
+        }
+      }
+        axios.get(`http://localhost:8080/complaint/all/complaint/history/`+localStorage.getItem("Rollnumber"),config)
+     .then(res => {
       this.setState({ data:res,isLoading:false });
       console.log("result....",res);
       console.log("state....", this.state.data);

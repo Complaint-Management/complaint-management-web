@@ -16,7 +16,12 @@ class viewOpenTicket extends Component {
     }
     
     componentDidMount(){
-        axios.get(`http://localhost:8080/complaint/all/complaint/open/1605272`)
+      const config={
+        headers:{
+          "Authorization":localStorage.getItem("access_token")
+        }
+      }
+        axios.get(`http://localhost:8080/complaint/all/complaint/open/`+localStorage.getItem("Rollnumber"),config)
       .then(res => {
         this.setState({ data:res,isLoading:false });
         console.log("result....",res);
@@ -35,7 +40,7 @@ class viewOpenTicket extends Component {
                      {console.log('data......',data)}
                      {(!isLoading)&& data.data.length !==0?
                       data.data.map (complaint => (
-                        <Card style={{ marginTop: 16 }} type="inner" title={'Complaint Id : '+complaint.id} extra={<Button type="primary">Not Resolved</Button>}>
+                        <Card style={{ marginTop: 16 }} type="inner" title={'Complaint ID : '+complaint.id} extra={<Button type="primary">Not Resolved</Button>}>
                           {complaint.complain}
                         </Card>)
                       ):<h3 style={{ textAlign:"center"}}>No open complaints at the moment. You can create complaint from create new ticket section</h3>

@@ -6,6 +6,7 @@ import MainPage from './MainPage';
 import createTicket from './createTicket';
 import viewHistory from './viewHistory';
 import viewOpenTickets from './viewOpenTickets';
+import Login from './Login';
 function App() {
   return (
 
@@ -14,8 +15,8 @@ function App() {
         <Route path="/create-new-ticket" component={createTicket}/>
         <Route path="/view-open-tickets" component={viewOpenTickets}/>
         <Route path="/history" component={viewHistory}/>
-        <Route exact path="/" component={MainPage}>
-        </Route>
+        <Route exact path="/Home" component={MainPage}/>
+        <Route exact path="/" component={Login}/>
       </Switch>
     </Router>
   );

@@ -18,11 +18,12 @@ class CreateTicketForm extends Component {
     
     submitHandler = (e) => {
         e.preventDefault();
+        console.log(this.state);
         axios({
             method: 'post',
             headers: {    
-                'crossDomain': true,
                 'Content-Type': 'application/json',
+                "Authorization":localStorage.getItem("access_token")
             },
             url: 'http://localhost:8080/complaint/add/complain',
             data: this.state,
